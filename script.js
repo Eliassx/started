@@ -65,8 +65,8 @@ nextPeople.addEventListener('click', () => {
 });
 
 supriseButton.addEventListener("click", () =>{
-    indexPeople = reviews(Math.random() * reviews.length)
-    newPeople(indexPeople)
+    const suprisePeople = Math.floor(Math.random() * reviews.length);
+    newPeople(suprisePeople);
 });
 
 function newPeople(index) {
